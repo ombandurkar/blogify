@@ -1,6 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const path = require('path');
+const fs = require('fs');
 const Blog = require('../model/blog');
 const Comment = require('../model/comments');
 const { route } = require('./user');
