@@ -25,7 +25,7 @@ app.set('views' , path.resolve('./views'));
 app.use(express.urlencoded({extended:false}));
 app.use(cookieParse());
 app.use(checkForAuthenticationCookie('token'));
-app.use(express.static(path.resolve('./public')));
+app.use(express.static(path.resolve('./public')));  //giving access to public folder
 
 app.use('/user' , userRoute);
 app.use('/blog' , blogRoute);
